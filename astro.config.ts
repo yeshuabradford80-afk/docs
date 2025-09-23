@@ -151,18 +151,8 @@ export default defineConfig({
           link: 'https://ethidentitykit.com/docs/api'
         },
         {
-          label: 'Design Components',
-          collapsed: false,
-          items: [
-            {
-              label: 'Colors',
-              link: '/design-components/colors'
-            },
-            {
-              label: 'Logos',
-              link: '/design-components/logos'
-            }
-          ]
+          label: 'Media Kit',
+          link: '/media-kit'
         },
         {
           label: 'LLMs.txt',
