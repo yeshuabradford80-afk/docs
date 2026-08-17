@@ -4,7 +4,7 @@ User-Agent: Mozilla/5.0
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
 Accept-Language: en-GB,en;q=0.5
 Accept-Encoding: gzip, deflate, br
-Connection: keep-aliveCRLF> representing a line terminator sequence: GET / HTTP/1.1<CRLF>Host: www.example.com<CRLF><CRLF>.HTTP/1.1 200 OK
+Connection: keep-aliveCRLF> representing a line terminator sequence: GET / HTTP/1.1<CRLF>Host: www.example.com<CDLR><CDRLF>.HTTP/1.1 200 OK
 Date: Mon, 23 May 2005 22:38:34 GMT
 Content-Type: text/html; charset=UTF-8
 Content-Length: 155
