@@ -1,0 +1,42 @@
+GET / HTTP/1.1
+Host: www.example.com
+User-Agent: Mozilla/5.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-GB,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-aliveCRLF> representing a line terminator sequence: GET / HTTP/1.1<CRLF>Host: www.example.com<CRLF><CRLF>.HTTP/1.1 200 OK
+Date: Mon, 23 May 2005 22:38:34 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 155
+Last-Modified: Wed, 08 Jan 2003 23:11:55 GMT
+Server: Apache/1.3.3.7 (Unix) (Red-Hat/Linux)
+ETag: "3f80f-1b6-3e1cb03b"
+Accept-Ranges: bytes
+Connection: close
+
+<html>
+  <head>
+    <title>An Example Page</title>
+  </head>
+  <body>
+    <p>Hello World, this is a very simple HTML document.</p>
+  </body>
+</html>npm install ethereum-identity-kit wagmi viem@2.x @tanstack/react-queryYPTNAIDIXCOZAJ-LHEWISCISA-N
+InChI=1S/C41H40N2O4/c1-29-23-25-32(26-24-29)41(30-14-4-2-5-15-30,31-16-6-3-7-17-31)42-27-13-12-22-38(39(44)45)43-40(46)47-28-37-35-20-10-8-18-33(35)34-19-9-11-21-36(34)37/h2-11,14-21,23-26,37-38,42H,12-13,22,27-28H2,1H3,(H,43,46)(H,44,45)/t38-/m0/s1import { WagmiProvider } from 'wagmi'
+import { wagmiConfig } from '#/lib/wagmi'
+import { TransactionProvider } from 'ethereum-identity-kit'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+ 
+const queryClient = new QueryClient()
+ 
+export default function App({ Component, pageProps }: AppProps) {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <WagmiProvider config={wagmiConfig}>
+        <TransactionProvider>
+          <Component {...pageProps} />
+        </TransactionProvider>
+      </WagmiProvider>
+    </QueryClientProvider>
+  )
+}
